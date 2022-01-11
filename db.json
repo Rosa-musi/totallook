@@ -1,0 +1,43 @@
+{
+ "categories": [
+     {
+         "id": 1,
+         "name": "Mujer",
+         "image": "https://imgur.com/YRNxqtW",
+         "description": "",
+         "products": [
+             {
+                 "id": 12,
+                 "name" : "Vestido",
+                 "image": "https://imgur.com/lDi50J6"
+             },
+             {
+                "id": 13,
+                "name" : "Rebozo",
+                "image": ""
+            }
+         ]
+
+     },
+     {
+        "id": 2,
+        "name": "Hogar",
+        "image": "https://imgur.com/pClIJQN",
+        "description": "",
+        "products": [
+            {
+                "id":14,
+                "name": "Almohada",
+                "image": "https://imgur.com/izxmWFe"
+            }
+
+        ]
+     },
+     {
+        "id": 3,
+        "name": "Niños",
+        "image": "https://imgur.com/0V7qENp",
+        "description": ""
+     }
+ ]
+}
