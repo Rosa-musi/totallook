@@ -10,6 +10,7 @@
     width: 120px;
     margin: 7px;
     cursor: pointer;
+    margin-left: 23px;
 }
 
 .userContainer {
@@ -23,10 +24,12 @@
     height: 30px;
     margin: 7px;
     cursor: pointer;
+    margin-right: 35px;
 }
 
 .sign{
-    margin: 7px;
+    width:  30px;;
+    margin: 5px;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;

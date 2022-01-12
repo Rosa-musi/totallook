@@ -6,13 +6,12 @@ import Main from './Componentes/Main/Main';
 import Acceso from './Login/Acceso'
 import {DataProvider} from './context/dataContext'
 import CRUD from './CRUD/CRUD'
-import './App.css'
+import Edition from './Componentes/AdminCategory/AdminCategory'
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom"
-
 
 function App() {
   return (
@@ -31,7 +30,6 @@ function App() {
       </div>
     </Router>
   );
-  
 }
 
 export default App;
