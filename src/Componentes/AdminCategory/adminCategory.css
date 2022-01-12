@@ -1,0 +1,57 @@
+.editionContainer{
+    margin: 0 3%
+
+    
+}
+
+.productsSearch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.allProducts{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:15px;
+}
+
+.search{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputSearch{
+    background:#ECECEC;
+    border:none;
+    border-radius: 5px;
+}
+.imgSearch{
+    margin-top: 4px;
+    width: 20px;
+    margin-right: 2px;
+}
+::placeholder{
+    padding: 5px;
+}
+.form-edit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.edit{
+    display: flex;
+    justify-content: space-around;
+}
+.input-edit{
+    width: 300px;
+    height: 40px;
+
+    background: #D6CABB;
+    border-radius: 10px;
+}
+.btn-edit{
+    width: 150px;
+    height: 30px;
+}
