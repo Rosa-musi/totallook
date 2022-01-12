@@ -1,17 +1,14 @@
 import React, {useContext}  from 'react'
-import auth from "../../firebase";
-import { signInWithEmailAndPassword } from "firebase/auth";
-
 import './header.css'
 
-import {DataContext} from '../../context/dataContext'
+//import {DataContext} from '../../context/dataContext'
 
 import logo from '../../assets/Logo.png'
 import shopCart from '../../assets/shopping-cart.png'
 
 
 export default function Header(){
-    const {getEmail, Email, password, setPassword} = useContext()
+    //const {getEmail, Email, password, setPassword} = useContext()
     return (
         <div className='navContainer'>
             <img className='navContainer_logo' src={logo} alt="logo"/>
