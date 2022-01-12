@@ -6,8 +6,11 @@ export const DataProvider = (props) => {
     const [showModal, setShowModal] = useState("");
     const [hideModal, setHideModal] = useState("");
     const [user, setUser] = useState("");
-    const [email, setEmail] = useState()
-    const [password, setPassword] = useState()
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
+    const [newCategory, setNewCategory] = useState("");
+    const [newDescription, setNewDescription] = useState("");
+    const [categories, setCategories] = useState([]);
 
     return (
         <DataContext.Provider 
@@ -21,7 +24,13 @@ export const DataProvider = (props) => {
                 password,
                 setPassword,
                 user,
-                setUser
+                setUser,
+                newCategory,
+                setNewCategory,
+                newDescription,
+                setNewDescription,
+                categories,
+                setCategories
                 }}>
             {props.children}
         </DataContext.Provider>

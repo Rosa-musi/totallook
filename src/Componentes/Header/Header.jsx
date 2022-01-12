@@ -1,8 +1,6 @@
 import React, {useContext}  from 'react'
 import './header.css'
-
-//import {DataContext} from '../../context/dataContext'
-
+import { Link } from 'react-router-dom'
 import logo from '../../assets/Logo.png'
 import shopCart from '../../assets/shopping-cart.png'
 import { DataContext} from '../../context/dataContext'
@@ -13,9 +11,9 @@ export default function Header(){
     const {email} = useContext(DataContext);
     return (
         <div className='navContainer'>
-            <img className='navContainer_logo' src={logo} alt="logo"/>
+            <Link to="/"><img className='navContainer_logo' src={logo} alt="logo"/></Link>
             <div className='userContainer'>
-                <p className='sign'>Sign in  </p>
+                <Link to="/signIn"><p className='sign'>Sign in  </p></Link>
                 {email === 'admin@totalook.com' && (
           <p> Hola {email}</p>
         )}

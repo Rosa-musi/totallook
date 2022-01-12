@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
@@ -6,9 +6,12 @@ import {
 } from "firebase/auth";
 import {auth} from "../../src/Firebase/FirebaseConfig";
 import {DataContext} from '../context/dataContext';
+import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
-  const {user, setUser, email, setEmail, password, setPassword} = useContext(DataContext);  
+  const navigate = useNavigate()
+  const {user, setUser, email, setEmail, password, setPassword} = useContext(DataContext);
+ 
 
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
@@ -21,7 +24,9 @@ function LoginForm() {
         email,
         password
       );
+      navigate("/acceso")
       console.log(user);
+      
     } catch (error) {
       console.log(error.message);
     }
