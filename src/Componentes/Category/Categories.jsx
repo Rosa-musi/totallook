@@ -74,45 +74,17 @@ export default function Category() {
         );
       })}
       </div>
-      <div
-        className="imgCategory"
-        id="imagenHombre"
-        border="5px solclassName  #C39C84"
-      >
-        {" "}
-        <h1 className="nameCategory">Hombres</h1>{" "}
-      </div>
-      <div
-        className="imgCategory"
-        id="imagenAccesorios"
-        border="5px solclassName  #C39C84"
-      >
-        {" "}
-        <h1 className="nameCategory">Accesorios </h1>{" "}
-      </div>
-      <div
-        className="imgCategory"
-        id="imagenHogar"
-        border="5px solclassName  #C39C84"
-      >
-        {" "}
-        <h1 className="nameCategory">Hogar</h1>{" "}
-      </div>
-      <div
-        className="imgCategory"
-        id="imagenNiños"
-        border="5px solclassName  #C39C84"
-      >
-        {" "}
-        <h1 className="nameCategory">Niños</h1>{" "}
-      </div>
-      <div id= "contentCategory">
-      <div id="imgCategory" ><h1 id= "nameCategory">Damas</h1></div>
-      <div id="imgCategory" ><h1 id= "nameCategory">Hombres</h1></div>
-      <div id="imgCategory" ><h1 id= "nameCategory">Hogar</h1></div>
-      <div id="imgCategory" ><h1 id= "nameCategory">Accesorios</h1></div>
-      <div id="imgCategory" ><h1 id= "nameCategory">Niños</h1></div>
-    </div>
+ 
+ 
+   
+  
+          <div id= "contentCategory">
+          <div id="imgCategory" ><h1 id= "nameCategory">Damas</h1></div>
+          <div id="imgCategory" ><h1 id= "nameCategory">Hombres</h1></div>
+          <div id="imgCategory" ><h1 id= "nameCategory">Hogar</h1></div>
+          <div id="imgCategory" ><h1 id= "nameCategory">Accesorios</h1></div>
+          <div id="imgCategory" ><h1 id= "nameCategory">Niños</h1></div>
+        </div>
       </div>
   );
 }
