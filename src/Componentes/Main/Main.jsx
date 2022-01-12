@@ -1,11 +1,15 @@
-import React  from 'react'
+import React, {useContext}  from 'react'
 import './main.css';
+import LoginForm from '../../Login/Acceso';
+import search from '../../assets/search-solid.svg'
+import { DataContext} from '../../context/dataContext'
 
 import search from '../../assets/search.png'
 import promoText from '../../assets/promo-text.png'
 import envio from '../../assets/envio.png'
 
 export default function Main() {
+
     return (
         <div className='mainContainer'>
             <div className='productsSearch'>
