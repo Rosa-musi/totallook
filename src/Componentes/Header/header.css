@@ -1,0 +1,33 @@
+.navContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D6CABB;
+}
+
+.navContainer_logo{
+    width: 120px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.userContainer {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background-color: #D6CABB;
+}
+
+.userContainer_cartIcon{
+    height: 30px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.sign{
+    margin: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}

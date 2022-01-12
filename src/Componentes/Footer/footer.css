@@ -1,0 +1,13 @@
+ .footerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #DDB583;
+    height: fit-content;
+    margin-top: auto;
+}
+
+.footerText{
+    font-size: 15px;
+}
