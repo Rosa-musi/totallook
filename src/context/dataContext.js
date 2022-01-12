@@ -3,7 +3,7 @@ import React, {createContext, useState, useEffect } from 'react'
 export const DataContext = createContext()
 
 export const DataProvider = (props) => {
-    const [showModal, setShowModal] = useState("");
+    const [show, setShow] = useState(false);
     const [hideModal, setHideModal] = useState("");
     const [user, setUser] = useState("");
     const [email, setEmail] = useState()
@@ -12,8 +12,8 @@ export const DataProvider = (props) => {
     return (
         <DataContext.Provider 
             value={{
-                showModal, 
-                setShowModal, 
+                show, 
+                setShow, 
                 hideModal, 
                 setHideModal,
                 email,

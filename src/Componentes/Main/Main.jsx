@@ -9,7 +9,6 @@ export default function Main() {
 
     return (
         <div className='mainContainer'>
-            <LoginForm></LoginForm>
             <div className='productsSearch'>
                 <p className='allProducts'>Todos los productos</p>
                 <div id ="search">
