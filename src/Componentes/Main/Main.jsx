@@ -1,11 +1,12 @@
 import React  from 'react'
 import './main.css';
-
+import LoginForm from '../../Login/Acceso';
 import search from '../../assets/search-solid.svg'
 
 export default function Main() {
     return (
         <div className='mainContainer'>
+            <LoginForm></LoginForm>
             <div className='productsSearch'>
                 <p className='allProducts'>Todos los productos</p>
                 <div id ="search">
