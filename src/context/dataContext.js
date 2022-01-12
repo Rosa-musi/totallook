@@ -5,7 +5,7 @@ export const DataContext = createContext()
 export const DataProvider = (props) => {
     const [showModal, setShowModal] = useState("");
     const [hideModal, setHideModal] = useState("");
-
+    const [user, setUser] = useState("");
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
 
@@ -19,7 +19,9 @@ export const DataProvider = (props) => {
                 email,
                 setEmail,
                 password,
-                setPassword
+                setPassword,
+                user,
+                setUser
                 }}>
             {props.children}
         </DataContext.Provider>

@@ -1,9 +1,12 @@
-import React  from 'react'
+import React, {useContext}  from 'react'
 import './main.css';
 import LoginForm from '../../Login/Acceso';
 import search from '../../assets/search-solid.svg'
+import { DataContext} from '../../context/dataContext'
+
 
 export default function Main() {
+
     return (
         <div className='mainContainer'>
             <LoginForm></LoginForm>

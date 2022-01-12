@@ -1,16 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
 import {auth} from "../../src/Firebase/FirebaseConfig";
+import {DataContext} from '../context/dataContext';
 
 function LoginForm() {
-  const [loginEmail, setLoginEmail] = useState("");
-  const [loginPassword, setLoginPassword] = useState("");
-
-  const [user, setUser] = useState({});
+  const {user, setUser, email, setEmail, password, setPassword} = useContext(DataContext);  
 
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
@@ -20,8 +18,8 @@ function LoginForm() {
     try {
       const user = await signInWithEmailAndPassword(
         auth,
-        loginEmail,
-        loginPassword
+        email,
+        password
       );
       console.log(user);
     } catch (error) {
@@ -30,23 +28,24 @@ function LoginForm() {
   };
 
   const logout = async () => {
+    setEmail('')
     await signOut(auth);
   };
 
   return (
-    <div className="Login">
+    <form className="Login">
       <div>
         <h3> Login </h3>
         <input
           placeholder="Email..."
           onChange={(event) => {
-            setLoginEmail(event.target.value);
+            setEmail(event.target.value);
           }}
         />
         <input type="password"
           placeholder="Password..."
           onChange={(event) => {
-            setLoginPassword(event.target.value);
+            setPassword(event.target.value);
           }}
         />
 
@@ -57,7 +56,7 @@ function LoginForm() {
       {user?.email}
 
       <button onClick={logout}> Sign Out </button>
-    </div>
+    </form>
   );
 }
 
